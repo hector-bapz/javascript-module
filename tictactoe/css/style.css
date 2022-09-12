@@ -1,0 +1,122 @@
+body {
+  background-color: rgb(10, 10, 44);
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 30.3352847259vw;
+}
+
+.header {
+  color: white;
+  font-style: italic;
+}
+
+.tic {
+  background: #FFFFFF;
+  background: linear-gradient(to top right, #FFFFFF 0%, #D9D9D9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tac {
+  background: #00A6CF;
+  background: linear-gradient(to top right, #00A6CF 0%, #00CCFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.toe {
+  background: #CF00BA;
+  background: linear-gradient(to top right, #CF00BA 0%, #FF00BB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.autor {
+  background: #00CCFF;
+  background: linear-gradient(to right, #00CCFF 29%, #61CF00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 800;
+  -webkit-text-decoration: underline rgb(182, 182, 182) solid 2px;
+          text-decoration: underline rgb(182, 182, 182) solid 2px;
+  text-underline-offset: 5px;
+}
+
+.instructions {
+  margin-bottom: 2.6609898882vw;
+  color: white;
+  display: inline-block;
+}
+
+.btn-ttt {
+  height: 12.3583934089vh;
+  width: 6.3863757318vw;
+  background-color: rgb(10, 10, 44);
+  border: none;
+  color: white;
+  font-size: 6vw;
+}
+.btn-reset {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  width: 120px;
+  height: 30px;
+  background-color: #00A6CF;
+  color: white;
+}
+.btn-reset:hover {
+  background-color: #00657e;
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+}
+
+.square {
+  width: 10.1117615753vw;
+  height: 19.5674562307vh;
+}
+.square--left {
+  border-right: 5px solid rgb(236, 236, 236);
+  border-bottom: 5px solid rgb(236, 236, 236);
+}
+.square--bleft {
+  border-right: 5px solid rgb(236, 236, 236);
+}
+.square--center {
+  border-bottom: 5px solid rgb(236, 236, 236);
+}
+.square--right {
+  border-left: 5px solid rgb(236, 236, 236);
+  border-bottom: 5px solid rgb(236, 236, 236);
+}
+.square--bright {
+  border-left: 5px solid rgb(236, 236, 236);
+}
+
+.xValue {
+  text-shadow: rgb(3, 205, 255) 0px 0px 17px;
+}
+
+.oValue {
+  text-shadow: rgb(255, 3, 87) 0px 0px 17px;
+}
+
+.ghost--xValue {
+  color: rgba(255, 255, 255, 0.397);
+  text-shadow: rgb(3, 205, 255) 0px 0px 17px;
+}
+.ghost--oValue {
+  color: rgba(255, 255, 255, 0.397);
+  text-shadow: rgb(255, 3, 87) 0px 0px 17px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="page d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <h1 class="header">
+          <span class="tic">TIC</span> <span class="tac">TAC</span>
+          <span class="toe">TOE</span>
+        </h1>
+        <p class="autor">by: Hector Barboza</p>
+        <p class="instructions" id="instruction">Select your piece</p>
+        <select id="selection">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+        <div class="d-flex flex-row justify-content-around">
+          <div
+            class="square square--left d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="topLeft"
+              clicked="false"
+            ></button>
+          </div>
+          <div
+            class="square square--center d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="topCenter"
+              clicked="false"
+            ></button>
+          </div>
+          <div
+            class="square square--right d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="topRight"
+              clicked="false"
+            ></button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-around">
+          <div
+            class="square square--left d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="midLeft"
+              clicked="false"
+            ></button>
+          </div>
+          <div
+            class="square square--center d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="midCenter"
+              clicked="false"
+            ></button>
+          </div>
+          <div
+            class="square square--right d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="midRight"
+              clicked="false"
+            ></button>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-around">
+          <div
+            class="square square--bleft d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="bottomLeft"
+              clicked="false"
+            ></button>
+          </div>
+          <div class="square d-flex justify-content-center align-items-center">
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="bottomCenter"
+              clicked="false"
+            ></button>
+          </div>
+          <div
+            class="square square--bright d-flex justify-content-center align-items-center"
+          >
+            <button
+              class="btn-ttt d-flex justify-content-center align-items-center"
+              id="bottomRight"
+              clicked="false"
+            ></button>
+          </div>
+        </div>
+
+        <button class="btn-reset" id="reset">Reset</button>
+
+        <!-- MODAL -->
+        <div
+          class="modal fade"
+          id="winnerModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  id="closeModalX"
+                ></button>
+              </div>
+              <div class="modal-body" id="modalBody"></div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                  id="closeModalBtn"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
